@@ -37,9 +37,9 @@ class Book:
                 "id": row['authors.id'],
                 "name": row['name'],
                 "created_at" : row['created_at'],
-                "created_at" : row['created_at']
+                "updated_at" : row['updated_at']
             }
-            book.favoritos_de_autores.append(author.Author[data])
+            book.favoritos_de_autores.append(author.Author(data))
             return book
     
     @classmethod

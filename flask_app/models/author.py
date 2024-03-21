@@ -57,5 +57,7 @@ class Author:
                 "created_at": row['books.created_at'],
                 "updated_at": row['books.updated_at']
             }
-            author.libros_favoritos.append(book.Book(data))
+            libro=book.Book(data)
+            print(libro)
+            author.libros_favoritos.append(libro)
         return author
